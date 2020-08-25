@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label=<node &#35;0<br/>olive_oil &le; 0.5<br/>samples = 1580<br/>value = [951, 235, 146, 248]<br/>class = east_asian>, fillcolor="#f1bc96"] ;
+1 [label=<node &#35;1<br/>butter &le; 0.5<br/>samples = 1389<br/>value = [946, 222, 122, 99]<br/>class = east_asian>, fillcolor="#efb184"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<node &#35;2<br/>cream &le; 0.5<br/>samples = 1141<br/>value = [930, 110, 42, 59]<br/>class = east_asian>, fillcolor="#ea9b62"] ;
+1 -> 2 ;
+3 [label=<node &#35;3<br/>samples = 1093<br/>value = [928, 79, 31, 55]<br/>class = east_asian>, fillcolor="#e99659"] ;
+2 -> 3 ;
+4 [label=<node &#35;4<br/>samples = 48<br/>value = [2, 31, 11, 4]<br/>class = eastern-europe>, fillcolor="#9cf194"] ;
+2 -> 4 ;
+5 [label=<node &#35;5<br/>pistachio &le; 0.5<br/>samples = 248<br/>value = [16, 112, 80, 40]<br/>class = eastern-europe>, fillcolor="#dcfad9"] ;
+1 -> 5 ;
+6 [label=<node &#35;6<br/>samples = 240<br/>value = [16, 112, 80, 32]<br/>class = eastern-europe>, fillcolor="#dafad7"] ;
+5 -> 6 ;
+7 [label=<node &#35;7<br/>samples = 8<br/>value = [0, 0, 0, 8]<br/>class = middleeastern>, fillcolor="#d739e5"] ;
+5 -> 7 ;
+8 [label=<node &#35;8<br/>potato &le; 0.5<br/>samples = 191<br/>value = [5, 13, 24, 149]<br/>class = middleeastern>, fillcolor="#e16bec"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<node &#35;9<br/>bacon &le; 0.5<br/>samples = 172<br/>value = [5, 6, 18, 143]<br/>class = middleeastern>, fillcolor="#df5eea"] ;
+8 -> 9 ;
+10 [label=<node &#35;10<br/>samples = 168<br/>value = [4, 4, 17, 143]<br/>class = middleeastern>, fillcolor="#de5ae9"] ;
+9 -> 10 ;
+11 [label=<node &#35;11<br/>samples = 4<br/>value = [1, 2, 1, 0]<br/>class = eastern-europe>, fillcolor="#c2f6bd"] ;
+9 -> 11 ;
+12 [label=<node &#35;12<br/>garlic &le; 0.5<br/>samples = 19<br/>value = [0, 7, 6, 6]<br/>class = eastern-europe>, fillcolor="#f1fdf0"] ;
+8 -> 12 ;
+13 [label=<node &#35;13<br/>samples = 6<br/>value = [0, 6, 0, 0]<br/>class = eastern-europe>, fillcolor="#47e539"] ;
+12 -> 13 ;
+14 [label=<node &#35;14<br/>samples = 13<br/>value = [0, 1, 6, 6]<br/>class = easterneuropean_russian>, fillcolor="#ffffff"] ;
+12 -> 14 ;
+}
